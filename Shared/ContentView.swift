@@ -33,7 +33,7 @@ struct ContentView: View {
     var body: some View {
         return HStack(spacing: 0) {
 //            ScrollView(.vertical) {
-            CustomScrollView(.vertical, showsIndicators: false, scrollPosition: self.scrollPositionBinding1) {
+            CustomScrollView(.vertical, scrollPosition: self.scrollPositionBinding1) {
                 ScrollViewReader { proxy in
                     ForEach(0..<20) { index in
                         RoundedRectangle(cornerRadius: 5)
