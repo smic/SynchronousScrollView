@@ -34,7 +34,7 @@ struct ContentView: View {
         return HStack(spacing: 0) {
 //            ScrollView(.vertical) {
             CustomScrollView(.vertical, scrollPosition: self.scrollPositionBinding1) {
-                ScrollViewReader { proxy in
+                LazyVStack {
                     ForEach(0..<20) { index in
                         RoundedRectangle(cornerRadius: 5)
                             .foregroundColor(.accentColor)
